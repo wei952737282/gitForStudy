@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 闭包+匿名函数
+    // function createFunction(){
+    //     var result = new Array;
+    //     for (var i = 0;i < 10; i++){
+    //         result[i] = function (num){
+    //             return function(){
+    //                 return num;
+    //             };
+    //         }(i);
+    //     }
+        
+    //     console.log(result);
+    //     return result;
+    // }
+    // createFunction();
+
+
+
+    //this指向
+    // var name = "the.window";
+
+    // var object = {
+    //     name : 'the.object',
+    //     getName : function(){
+    //         return this.name;
+    //     }
+    // }
+    // console.log(object.getName());
+    // console.log((object.getName)());
+    // console.log(object.getName = object.getName);
+
+
+    function outPutNumbers(count){
+        for(var i = 0; i < count;i++){
+            console.log(i);
+        }
+        var i;
+        console.log(i + '1');
+    }
+    outPutNumbers(3);
+    </script>
+</body>
+</html>
